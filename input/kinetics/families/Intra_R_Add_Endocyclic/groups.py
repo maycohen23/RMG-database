@@ -7523,6 +7523,7 @@ from the tip of the 5-member ring to the corner of the 4. Resonance form 3.
 )
 
 forbidden(
+<<<<<<< HEAD
     label = "bicyclic_self_ring_close",
     group = 
 """
@@ -7610,10 +7611,25 @@ forbidden(
 7 *3 C u0 p0 c0 {6,D}
 8    C u0 p0 c0 {5,[S,B]} {9,[D,B]}
 9    C u0 p0 c0 {2,[S,B]} {8,[D,B]}
+Prevent strained addition between para-related methyl and ethylene side-groups on a benzene ring.
+""",
+)
+
+forbidden(
+    label = "180 degree C#N bond",
+    group =
+"""
+1 *1 O u1 p2 c0 {2,S}
+2    O u0 p2 c0 {1,S} {3,S}
+3    C u0 p0 c0 {2,S} {4,S}
+4 *2 C u0 p0 c0 {3,S} {5,T}
+5 *3 N u0 p1 c0 {4,T}
+>>>>>>> Added family-specific forbidden groups
 """,
     shortDesc = u"""""",
     longDesc =
 u"""
-Prevent strained addition between para-related methyl and ethylene side-groups on a benzene ring.
+Prevent a s2_4_5_diene_1_5 bicyclic (using polycyclic.py nomenclature) from undergoing a highly strained self-ring closure 
+from the tip of the 5-member ring to the corner of the 4. Resonance form 3.
 """,
 )

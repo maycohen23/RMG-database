@@ -1,0 +1,9 @@
+README.rst
+setup.py
+RMG_database.egg-info/PKG-INFO
+RMG_database.egg-info/SOURCES.txt
+RMG_database.egg-info/dependency_links.txt
+RMG_database.egg-info/top_level.txt
+scripts/evansPolanyi.py
+scripts/exportKineticsLibraryToChemkin.py
+scripts/importChemkinLibrary.py

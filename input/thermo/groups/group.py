@@ -54526,7 +54526,7 @@ entry(
         S298 = (-10.57,'cal/(mol*K)'),
     ),
     shortDesc = """RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2019""",
-    longDesc = 
+    longDesc =
 """
 "
 """,
@@ -59459,6 +59459,54 @@ Added by Oscar using six CBS-QB3 calculations for imipramine API project
 """,
 )
 
+entry(
+    index = 8005,
+    label = "N3s-COCbCb",
+    group = 
+"""
+1 * N3s u0 {2,S} {3,S} {4,S}
+2   CO  u0 {1,S} {5,D}
+3   Cb  u0 {1,S}
+4   Cb   u0 {1,S}
+5   O2d  u0 {2,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300, 400, 500, 600, 800, 1000, 1500],'K'),
+        Cpdata = ([18.11, 20.23, 22.59, 26.09, 30.83, 34.34, 30.6],'J/(mol*K)'),
+        H298 = (0.11,'kJ/mol'),
+        S298 = (12.28,'J/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+Refitted by Oscar using two CBS-QB3 calculations for imipramine API project
+""",
+)
+
+entry(
+    index = 8006,
+    label = "N3s-COCsCs",
+    group = 
+"""
+1 * N3s u0 {2,S} {3,S} {4,S}
+2   CO  u0 {1,S} {5,D}
+3   Cs  u0 {1,S}
+4   Cs   u0 {1,S}
+5   O2d  u0 {2,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300, 400, 500, 600, 800, 1000, 1500],'K'),
+        Cpdata = ([14.71, 17.65, 20.26, 23.15, 25.94, 27.24, 22.03],'J/(mol*K)'),
+        H298 = (19.01,'kJ/mol'),
+        S298 = (-86.73,'J/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+Added by Oscar using two CBS-QB3 calculations for imipramine API project
+""",
+)
+
 ########## End of API DB groups
 
 tree(
@@ -62076,6 +62124,8 @@ L1: R
                 L5: N3s-CbHH
                 L5: N3s-(CO)HH
                 L5: N3s-CdHH
+            L4: N3s-COCsCs
+            L4: N3s-COCbCb
             L4: N3s-CCH
                 L5: N3s-CsCsH
                 L5: N3s-CbCsH

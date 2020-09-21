@@ -12,8 +12,6 @@ template(reactants=["Rn"], products=["RnCyclic"], ownReverse=False)
 reverse = "Ring_Open_Endo_Cycli_Radical"
 reversible = True
 
-only_reverse = True
-
 recipe(actions=[
     ['CHANGE_BOND', '*2', -1, '*3'],
     ['FORM_BOND', '*1', 1, '*3'],
@@ -7524,6 +7522,7 @@ from the tip of the 5-member ring to the corner of the 4. Resonance form 3.
 """,
 )
 
+<<<<<<< HEAD
 forbidden(
 <<<<<<< HEAD
     label = "bicyclic_self_ring_close",
@@ -7635,3 +7634,5 @@ Prevent a s2_4_5_diene_1_5 bicyclic (using polycyclic.py nomenclature) from unde
 from the tip of the 5-member ring to the corner of the 4. Resonance form 3.
 """,
 )
+=======
+>>>>>>> restore families form master

@@ -2474,6 +2474,7 @@ multiplicity 2
 15    H u0 p0 c0 {9,S}
 16    H u0 p0 c0 {6,S}
 
+<<<<<<< HEAD
 C12H9
 multiplicity 2
 1    C u0 p0 c0 {2,S} {3,B} {4,B}
@@ -4309,3 +4310,5 @@ multiplicity 2
 5 H u0 p0 c0 {3,S}
 6 O u0 p2 c0 {3,S} {7,S}
 7 H u0 p0 c0 {6,S}
+=======
+>>>>>>> restore families form master

@@ -83,6 +83,26 @@ api = {
     '6_membered_central_C-C_shift',
     'API_Birad_R_Recombination',  # only forward
     'API_Birad_recombination',  # only forward
+    'API/API_1+2_Cycloaddition',  # exclude aromatic rings
+    '1,2-Birad_to_alkene',  # only forward by default
+    '1,2_Insertion_CO',
+    '1,2_Insertion_carbene',
+    'API/API_1,2_NH3_elimination',
+    '1,2_shiftC',
+    '1,2_shiftS',
+    '1,3_Insertion_CO2',
+    'API/API_1,3_Insertion_ROR',  # exclude aromatic rings
+    'API/API_1,3_Insertion_RSR',  # exclude aromatic rings
+    '1,3_NH3_elimination',  # only forward
+    'API/API_1,4_Cyclic_birad_scission',  # only forward
+    'API/API_1,4_Linear_birad_scission',  # only forward
+    'API/API_2+2_cycloaddition_CCO',  # only reverse
+    'API/API_2+2_cycloaddition_CO',  # only reverse
+    'API/API_2+2_cycloaddition_CS',  # only reverse
+    'API/API_2+2_cycloaddition_Cd',  # only reverse
+    '6_membered_central_C-C_shift',
+    'API/API_Birad_R_Recombination',  # only forward
+    'API/API_Birad_recombination',  # only forward
     'CO_Disproportionation',
     'Concerted_Intra_Diels_alder_monocyclic_1,2_shiftH',
     'Cyclic_Ether_Formation',
@@ -103,6 +123,21 @@ api = {
     'Intra_R_Add_Exo_scission',
     'Intra_ene_reaction',
     'API_intra_H_migration',
+    'API/API_Disproportionation',  # only forward
+    'API/API_HO2_Elimination_from_PeroxyRadical',
+    'API/API_H_Abstraction',  # exclude aromatic rings, don't abstract from a radical site
+    'API/API_Intra_2+2_cycloaddition_Cd',  # only reverse
+    'Intra_5_membered_conjugated_C=C_C=C_addition',
+    'Intra_Diels_alder_monocyclic',
+    'Intra_Retro_Diels_alder_bicyclic',
+    'API/API_Intra_Disproportionation',  # only forward
+    # 'API/API_Intra_RH_Add_Endocyclic', not recommended for APIs
+    # 'API/API_Intra_RH_Add_Exocyclic', not recommended for APIs
+    'API/API_Intra_R_Add_Endocyclic',  # exclude aromatic rings
+    'API/API_Intra_R_Add_Exocyclic',  # exclude aromatic rings
+    'Intra_R_Add_Exo_scission',
+    'Intra_ene_reaction',
+    'API/API_intra_H_migration',
     'intra_NO2_ONO_conversion',
     'intra_OH_migration',
     'intra_substitutionCS_cyclization',

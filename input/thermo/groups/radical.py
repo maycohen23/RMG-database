@@ -4717,6 +4717,7 @@ entry(
 )
 
 ### API radical corrections
+
 entry(
     index = 8000,
     label = "CsJ-CNOOH",
@@ -4741,10 +4742,6 @@ u"""
 
 """,
 )
-
-
-
-
 
 ### End of API radical corrections
 

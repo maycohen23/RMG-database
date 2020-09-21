@@ -536,6 +536,27 @@ entry(
 entry(
     index = 25,
     label = "CdJ2_singlet-(Cdd-Od)",
+"""
+1 * Ct  u0 {2,T} {3,S}
+2   N3t u0 {1,T}
+3   Cs u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
+        H298 = (0,'kcal/mol'),
+        S298 = (0,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc =
+u"""
+zeros on purpose, the data is in the N3t-Ct group
+""",
+)
+
+entry(
+    index = 21,
+    label = "Ct-CtH",
     group = 
 """
 1   Cdd u0 {2,D} {3,D}
@@ -54681,7 +54702,7 @@ entry(
     shortDesc = """RMG-type entries for Sulfur Groups, based on quantum calculations perfomred by Vandeputte (2011), Gillis, Class (2013), and Bozzelli, refit by Ryan Gillis in 2019""",
     longDesc =
 """
-"
+
 """,
 )
 
@@ -55865,6 +55886,28 @@ entry(
     longDesc = 
 """
 "
+""",
+)
+
+entry(
+    index = 10011,
+    label = "N3t-CtCs",
+    group =
+"""
+1 * N3t  u0 p1 {2,T}
+2   Ct   u0 {1,T} {3,S}
+3   Cs   u0 {2,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([24.994, 22.376, 22.903, 25.874, 32.942, 39.077, 47.030],'J/(mol*K)'),
+        H298 = (124.16,'kJ/mol'),
+        S298 = (108.89,'J/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc =
+u"""
+Calculated by subtracting the data for the Ct-CtCs group (Ct-Cs STEIN and FAHR; J. PHYS. CHEM. 1985, 89, 17, 3714) from respective values from thermo_DFT_CCSDTF12_BAC data for the HCN species.
 """,
 )
 
@@ -59434,6 +59477,177 @@ Added by Oscar using two CBS-QB3 calculations for imipramine API project
 """,
 )
 
+########## API DB groups
+entry(
+    index = 8000,
+    label = "Cs-NO",
+    group =
+"""
+1 * Cs  u0 {2,S} {3,S}
+2   N   u0 {1,S}
+3   O   u0 {1,S}
+""",
+    thermo=u"Cs-N3sO2sHH",
+    shortDesc = u"""Cs-NO""",
+    longDesc =
+u"""
+Added by Oscar using three CBS-QB3 calculations for imipramine API project
+""",
+)
+
+entry(
+    index = 8001,
+    label = "Cs-CsN3sO2sH",
+    group =
+"""
+1 * Cs  u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs  u0 {1,S}
+3   N3s u0 {1,S}
+4   O2s u0 {1,S}
+5   H   u0 {1,S}
+
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([15.86, 22.37, 27.61, 32.3, 41.02, 46.84, 55.63], 'J/(mol*K)'),
+        H298=(-55.07, 'kJ/mol'),
+        S298=(-87.08, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""Cs-CsN3sO2sH""",
+    longDesc =
+u"""
+Added by Oscar using three CBS-QB3 calculations for imipramine API project
+""",
+)
+
+entry(
+    index = 8002,
+    label = "Cs-N3sO2sHH",
+    group =
+"""
+1 * Cs  u0 {2,S} {3,S} {4,S} {5,S}
+2   N3s u0 {1,S}
+3   O2s u0 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
+
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([17.21, 24.29, 30.79, 36.72, 47.17, 54.63, 66.78], 'J/(mol*K)'),
+        H298=(-59.25, 'kJ/mol'),
+        S298=(5.51, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""Cs-N3sO2sHH""",
+    longDesc =
+u"""
+Added by Oscar using four CBS-QB3 calculations for imipramine API project
+""",
+)
+
+entry(
+    index = 8003,
+    label = "Cs-N3dO2sHH",
+    group =
+"""
+1 * Cs  u0 {2,S} {3,S} {4,S} {5,S}
+2   N3d u0 {1,S}
+3   O2s u0 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
+
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([18.38, 27.5, 35.31, 41.57, 52.05, 58.15, 67.75], 'J/(mol*K)'),
+        H298=(-32.14, 'kJ/mol'),
+        S298=(10.45, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""Cs-N3dO2sHH""",
+    longDesc =
+u"""
+Added by Oscar using two CBS-QB3 calculations for imipramine API project
+""",
+)
+
+entry(
+    index = 8004,
+    label = "Cs-CsN3s(O2sO2sH)",
+    group =
+"""
+1 * Cs  u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs  u0 {1,S}
+3   N3s u0 {1,S}
+4   O2s u0 {1,S} {6,S}
+5   H   u0 {1,S}
+6   O2s u0 {4,S}
+""",
+    thermo=ThermoData(
+        Tdata=([300, 400, 500, 600, 800, 1000, 1500], 'K'),
+        Cpdata=([13.62, 19.66, 24.87, 29.65, 39.16, 44.82, 54.67], 'J/(mol*K)'),
+        H298=(-63.22, 'kJ/mol'),
+        S298=(-90.74, 'J/(mol*K)'),
+    ),
+    shortDesc = u"""Cs-CsN3s(O2sO2sH)""",
+    longDesc =
+u"""
+Added by Oscar using six CBS-QB3 calculations for imipramine API project
+""",
+)
+
+entry(
+    index = 8005,
+    label = "N3s-COCbCb",
+    group = 
+"""
+1 * N3s u0 {2,S} {3,S} {4,S}
+2   CO  u0 {1,S} {5,D}
+3   Cb  u0 {1,S}
+4   Cb   u0 {1,S}
+5   O2d  u0 {2,D}
+""",
+    thermo = ThermoData(
+       Tdata = ([300, 400, 500, 600, 800, 1000, 1500],'K'),
+        Cpdata = ([12.69, 8.95, 10.35, 14.93, 21.07, 23.51, 17.8],'J/(mol*K)'),
+        H298 = (54.13,'kJ/mol'),
+        S298 = (-88.46,'J/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+Added by Oscar using two CBS-QB3 calculations for imipramine API project
+""",
+)
+
+entry(
+    index = 8006,
+    label = "N3s-COCsCs",
+    group = 
+"""
+1 * N3s u0 {2,S} {3,S} {4,S}
+2   CO  u0 {1,S} {5,D}
+3   Cs  u0 {1,S}
+4   Cs   u0 {1,S}
+5   O2d  u0 {2,D}
+""",
+    thermo = ThermoData(
+        Tdata = ([300, 400, 500, 600, 800, 1000, 1500],'K'),
+        Cpdata = ([14.71, 17.65, 20.26, 23.15, 25.94, 27.24, 22.03],'J/(mol*K)'),
+        H298 = (19.01,'kJ/mol'),
+        S298 = (-86.73,'J/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+Added by Oscar using two CBS-QB3 calculations for imipramine API project
+""",
+)
+
+########## End of API DB groups
+
+
+
+
 entry(
     index = 8004,
     label = "Cs-CsN3s(O2sO2sH)",
@@ -59580,6 +59794,7 @@ L1: R
             L4: CtCF
             L4: Ct-CtN3s
             L4: Ct-N3tN3s
+            L4: Ct-N3tCs
             L4: Ct-CtH
             L4: Ct-StH
             L4: Ct-CtOs

@@ -175,7 +175,6 @@ liquid_peroxide = {
     'Baeyer-Villiger_step2_cat',
 }
 
-<<<<<<< HEAD
 # # Surface chemistry for heterogeneous catalysis.
 # surface = {
 #     'Surface_Adsorption_Single',
@@ -202,34 +201,3 @@ liquid_peroxide = {
 #     'Surface_Abstraction_Beta_double_vdW',
 # }
 
-# reaction families for halogen chemistry only
-halogens = {
-    'Cl_Abstraction',
-    'F_Abstraction',
-    'Br_Abstraction',
-    'Disproportionation-Y',
-    'XY_Addition_MultipleBond',
-    '1,2_XY_interchange',
-    'halocarbene_recombination',
-    'halocarbene_recombination_double',
-    'XY_elimination_hydroxyl',
-    'intra_halogen_migration'
-=======
-Surface chemistry for heterogeneous catalysis.
-surface = {
-    'Surface_Adsorption_Single',
-    'Surface_Adsorption_vdW',
-    'Surface_Adsorption_Dissociative',
-    'Surface_Dissociation',
-    'Surface_Abstraction',
-}
-
-Surface chemistry families that are under development and not yet working well.
-surface_development = {
-    'Surface_Adsorption_Double',
-    'Surface_Dissociation_vdW',
-    'Surface_Adsorption_Bidentate',
-    'Surface_Bidentate_Dissociation'
-    # 'Surface_Recombination' #DEPRECATED. USE Surface_Dissociation INSTEAD
->>>>>>> restore families form master
-}

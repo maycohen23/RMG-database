@@ -48,11 +48,13 @@ Reverse rate check: 1.053350e+12 cm^3/(mol*s), close to the diffusion limit of 1
 entry(
     index=1002,
     label="OHCH2OO <=> CH2O + HO2",
-    kinetics=Arrhenius(A=(5.29923e+14,'s^-1'), n=0, Ea=(73.7736,'kJ/mol'), T0=(1,'K'), Tmin=(292,'K'), Tmax=(306,'K')),
+    kinetics=Arrhenius(A=(5.29923e+11,'s^-1'), n=0, Ea=(73.7736,'kJ/mol'), T0=(1,'K'), Tmin=(292,'K'), Tmax=(306,'K')),
     shortDesc=u"""Experimental""",
     longDesc=
     u"""
 Morajkar 2014, 10.1002/kin.20817
+Rate decreased by x1000, since the literature value is for gas phase,
+and we think that the liquid phase mechanism is different
 """,
 )
 

@@ -43907,3 +43907,101 @@ Original entry: H + iC4H8 <=> [CH]=C(C)C + H2
 """,
 )
 
+entry(
+    index = 3137,
+    label = "O_rad + C6H12-4 <=> OH_p23 + C6H11-4",
+    degeneracy = 12.0,
+
+    kinetics = Arrhenius(A=(2.57236e+06,'cm^3/(mol*s)'), n=2.47494, Ea=(10.2597,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K'), comment="""Fitted to 200 data points; dA = *|/ 1.01741, dn = +|- 0.00229333, dEa = +|- 0.011747 kJ/mol"""),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: dmbene_chemistry
+Original entry: CC(C)=C(C)C + [O] <=> C=C(C)[C](C)C + [OH]
+""",
+)
+
+entry(
+    index = 3138,
+    label = "HO2_r3 + C6H12O <=> H2O2-2 + C6H11O",
+    degeneracy = 12.0,
+
+    kinetics = Arrhenius(A=(3.82555e-06,'cm^3/(mol*s)'), n=5.0113, Ea=(45.4833,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K'), comment="""Fitted to 200 data points; dA = *|/ 1.11882, dn = +|- 0.0149193, dEa = +|- 0.0764205 kJ/mol"""),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: dmbene_chemistry
+Original entry: CC1(C)OC1(C)C + [O]O <=> OO + [CH2]C1(C)OC1(C)C
+""",
+)
+
+entry(
+    index = 3139,
+    label = "H + C6H12-4 <=> H2_p + C6H11-4",
+    degeneracy = 12.0,
+
+    kinetics = Arrhenius(A=(226600,'cm^3/(mol*s)'), n=2.75688, Ea=(10.8481,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K'), comment="""Fitted to 200 data points; dA = *|/ 1.04604, dn = +|- 0.00598087, dEa = +|- 0.0306356 kJ/mol"""),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: dmbene_chemistry
+Original entry: CC(C)=C(C)C + [H] <=> C=C(C)[C](C)C + [H][H]
+""",
+)
+
+entry(
+    index = 3140,
+    label = "H + C6H12O <=> H2_p + C6H11O",
+    degeneracy = 12.0,
+
+    kinetics = Arrhenius(A=(8804,'cm^3/(mol*s)'), n=3.1967, Ea=(25.6194,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K'), comment="""Fitted to 200 data points; dA = *|/ 1.22359, dn = +|- 0.0268145, dEa = +|- 0.137351 kJ/mol"""),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: dmbene_chemistry
+Original entry: CC1(C)OC1(C)C + [H] <=> [CH2]C1(C)OC1(C)C + [H][H]
+""",
+)
+
+entry(
+    index = 3141,
+    label = "HO2_r3 + C6H12-4 <=> H2O2-2 + C6H11-4",
+    degeneracy = 12.0,
+
+    kinetics = Arrhenius(A=(6.65621e-08,'cm^3/(mol*s)'), n=5.94384, Ea=(14.3024,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K'), comment="""Fitted to 200 data points; dA = *|/ 1.43802, dn = +|- 0.048273, dEa = +|- 0.247267 kJ/mol"""),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: dmbene_chemistry
+Original entry: CC(C)=C(C)C + [O]O <=> C=C(C)[C](C)C + OO
+""",
+)
+
+entry(
+    index = 3142,
+    label = "O2 + C6H12-4 <=> HO2_p23 + C6H11-4",
+    degeneracy = 24.0,
+
+    kinetics = Arrhenius(A=(40.5334,'cm^3/(mol*s)'), n=3.91175, Ea=(129.657,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K'), comment="""Fitted to 200 data points; dA = *|/ 1.06057, dn = +|- 0.00781386, dEa = +|- 0.0400246 kJ/mol"""),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: dmbene_chemistry
+Original entry: CC(C)=C(C)C + [O][O] <=> C=C(C)[C](C)C + [O]O
+""",
+)
+
+entry(
+    index = 3143,
+    label = "OH + C6H12O <=> H2O_p + C6H11O",
+    degeneracy = 12.0,
+
+    kinetics = Arrhenius(A=(1.36561,'cm^3/(mol*s)'), n=3.64035, Ea=(-13.6259,'kJ/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(2000,'K'), comment="""Fitted to 200 data points; dA = *|/ 1.051, dn = +|- 0.00661022, dEa = +|- 0.0338593 kJ/mol"""),
+    rank = 3,
+    longDesc = 
+"""
+Training reaction from kinetics library: dmbene_chemistry
+Original entry: CC1(C)OC1(C)C + [OH] <=> O + [CH2]C1(C)OC1(C)C
+""",
+)
+

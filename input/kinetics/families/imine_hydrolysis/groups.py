@@ -36,9 +36,9 @@ entry(
     label="CdN",
     group=
 """
-1 *1 C u0 p0 c0 {2,D} {3,S}
-2 *2 N u0 p1 c0 {1,D}
-3    R ux px cx {1,S}
+1 *1 C u0 p0 c0 {2,D} 
+2 *2 N u0 p1 c0 {1,D} {3,S}
+3    R ux px cx {2,S}
 """,
     kinetics=None,
 )

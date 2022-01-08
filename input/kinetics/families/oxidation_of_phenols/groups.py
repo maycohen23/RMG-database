@@ -20,8 +20,8 @@ only_forward = True
 
 recipe(actions=[
     ['BREAK_BOND', '*1', 1, '*2'],
-    ['GAIN_RADICAL', '*2'],
-    ['GAIN_RADICAL', '*1'],
+    ['GAIN_RADICAL', '*2','1'],
+    ['GAIN_RADICAL', '*1','1'],
 
 ])
 

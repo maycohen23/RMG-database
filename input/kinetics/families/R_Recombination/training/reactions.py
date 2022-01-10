@@ -3930,7 +3930,6 @@ VRC-TST, the CCSD(T)/CBS limit for the quartet state interaction energy is obtai
 E = E(CCSD(T)−F12/VDZ−F12) + E(MP2−F12/VTZ−F12) − E(MP2−F12/VDZ−F12)
 """,
 )
-<<<<<<< HEAD
 
 entry(
     index = 145,
@@ -4756,5 +4755,3 @@ pH 7 (pH 10 also available from the same source)
 R3.12
 """,
 )
-=======
->>>>>>> restore families form master

@@ -90,7 +90,6 @@ entry(
 31    H  u0 p0 c0 {15,S}
 32    H  u0 p0 c0 {16,S}
 33    H  u0 p0 c0 {19,S}
-#
 34    O  u0 p2 c0 {7,D}
 35    H  u0 p0 c0 {8,S}
 36    H  u0 p0 c0 {8,S}

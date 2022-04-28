@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-name = "imine_hydrolysis/rules"
+name = "bi_imine_hydrolysis/rules"
 shortDesc = u""
 longDesc = u"""
 

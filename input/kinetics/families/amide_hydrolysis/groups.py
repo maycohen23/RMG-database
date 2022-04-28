@@ -35,7 +35,7 @@ entry(
 3    O  u0 p2 c0 {2,D}
 4 *2 N  u0 p1 c0 {2,S} {5,S} {6,S}
 5    R  ux px cx {4,S}
-6    H  u0 p0 c0 {4,S}
+6    R  ux px cx {4,S}
 """,
     kinetics=None,
 )

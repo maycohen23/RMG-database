@@ -7,7 +7,7 @@ longDesc = u"""
 This family describes solution-phase hydrolysis of amine groups:
 R=NR' + H2O <=> H + RN(OH)R'
 atom labels:
-R[*1]=N[*2]R' + H[*3]O[*4]H <=> H[*4] + R[*1]N[*2](OH[*4])R'
+R[*1]=N[*2]R' + H[*4]O[*3]H <=> H[*4] + R[*1]N[*2](OH[*3])R'
 """
 
 template(reactants=["CdN", "H2O"], products=["CdNO", "H"], ownReverse=False)
@@ -21,8 +21,9 @@ only_forward = True
 recipe(actions=[
     ['CHANGE_BOND', '*1', -1, '*2'],
     ['BREAK_BOND', '*3', 1, '*4'],
-    ['FORM_BOND', '*1', 1, '*4'],
-
+    ['FORM_BOND', '*1', 1, '*3'],
+    ['GAIN_RADICAL', '*2' , '1'],
+    ['GAIN_RADICAL', '*4' , '1'],
 ])
 
 entry(
@@ -30,9 +31,8 @@ entry(
     label="CdN",
     group=
 """
-1 *1 R ux px cx {2,D} 
-2 *2 N u0 p1 c0 {1,D} {3,S}
-3    R ux px cx {2,S}
+1 *1 R!H ux px cx {2,D} 
+2 *2 N u0 p1 c0 {1,D}
 """,
     kinetics=None,
 )

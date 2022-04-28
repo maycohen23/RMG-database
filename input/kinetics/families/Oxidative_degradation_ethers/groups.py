@@ -48,8 +48,8 @@ entry(
     label="o2_radical",
     group=
 """
-1 O u0 p2 c0 {2,S} 
-2 O u0 p2 c0 {1,S} 
+1 *3 O u0 p2 c0 {2,D} 
+2    O u0 p2 c0 {1,D} 
 
 
 """,
